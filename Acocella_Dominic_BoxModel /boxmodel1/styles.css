@@ -1,0 +1,81 @@
+/* BOX MODEL ARTWORK 1 */
+
+/* Reset keeps widths and spacing easier to control. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the artwork in the browser. */
+body {
+  background: #f4efe6;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main square artwork area. */
+.artwork {
+  width: 620px;
+  height: 620px;
+}
+
+/* Large outside box. */
+.outer-frame {
+  width: 100%;
+  height: 500px;
+  background: #17324d;
+  padding: 52px;
+}
+
+/* Second layer uses padding to create another frame. */
+.inner-field {
+  width: 100%;
+  height: 100%;
+  background: #e9b949;
+  padding: 58px 68px;
+}
+
+/* Dark border surrounds the center group of panels. */
+.window {
+  width: 100%;
+  height: 100%;
+  border: 14px solid #7a2431;
+  background: #f7f1dc;
+  display: flex;
+  padding: 10px;
+}
+
+/* Three colored rectangles sit side by side. */
+.panel {
+  flex: 1;
+  height: 100%;
+}
+
+.panel-one {
+  background: #d95d39;
+}
+
+.panel-two {
+  background: #4f7c6b;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.panel-three {
+  background: #c9d6df;
+}
+
+/* Separate bottom box completes the composition. */
+.bottom-band {
+  width: 100%;
+  height: 120px;
+  background: #8fbc8f;
+  border-top: 12px solid #f4efe6;
+}

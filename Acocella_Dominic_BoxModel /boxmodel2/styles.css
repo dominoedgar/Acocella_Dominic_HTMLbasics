@@ -1,0 +1,99 @@
+/* BOX MODEL ARTWORK 2 */
+
+/* Basic reset for predictable box sizes. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ece8df;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the composition. */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artwork {
+  width: 640px;
+  height: 640px;
+  background: #1f1f1f;
+  border: 16px solid #1f1f1f;
+}
+
+/* Top section is split into two boxes. */
+.top-row {
+  width: 100%;
+  height: 360px;
+  display: flex;
+}
+
+.left-block {
+  width: 42%;
+  height: 100%;
+  background: #d94841;
+  padding: 55px;
+  margin-right: 16px;
+}
+
+/* A smaller box is created with padding around it. */
+.small-square {
+  width: 100%;
+  height: 100%;
+  background: #f2c14e;
+  border: 18px solid #f4f1e8;
+}
+
+.right-block {
+  width: 58%;
+  height: 100%;
+  background: #2f6f8f;
+  padding: 38px 42px 70px 42px;
+}
+
+.right-inner {
+  width: 100%;
+  height: 100%;
+  background: #f4f1e8;
+  border-left: 28px solid #6e9f62;
+  border-bottom: 28px solid #6e9f62;
+}
+
+/* Narrow horizontal box separates the top and bottom. */
+.middle-strip {
+  width: 100%;
+  height: 54px;
+  background: #f4f1e8;
+  border-top: 16px solid #1f1f1f;
+  border-bottom: 16px solid #1f1f1f;
+}
+
+/* Bottom row uses different widths to make an uneven grid. */
+.bottom-row {
+  width: 100%;
+  height: 194px;
+  display: flex;
+}
+
+.bottom-left {
+  width: 25%;
+  background: #6e9f62;
+  margin-right: 16px;
+}
+
+.bottom-center {
+  width: 45%;
+  background: #f2c14e;
+  margin-right: 16px;
+}
+
+.bottom-right {
+  width: 30%;
+  background: #d94841;
+}
